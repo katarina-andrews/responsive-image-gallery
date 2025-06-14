@@ -13,9 +13,9 @@ async function fetchImages() {
       .map((image) => {
         return `
 
- <div class="w-full h-60 rounded-lg shadow-2xl overflow-hidden hover:scale-105 transition duration-300 ease-in-out">
+ <div class="rounded-lg shadow-2xl overflow-hidden hover:scale-105 transition duration-300 ease-in-out">
 
- <img src="${image.download_url}" alt="Random image by ${image.author}"/>
+ <img class="w-full h-60 object-cover" src="${image.download_url}" alt="Random image by ${image.author}"/>
 
  </div>
 
