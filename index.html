@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
- <head>
-
- <meta charset="UTF-8" />
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Gallery</title>
   </head>
- <link rel="stylesheet" href="style.css">
- 
+  <body>
+    <header class="p-5 text-center">
+      <h1
+        class="text-4xl font-extrabold md:text-5xl lg:text-6xl p-5 rounded-lg shadow-2xl"
+      >
+        Random Image Gallery
+      </h1>
+    </header>
 
- <title>Image Gallery</title>
+    <main>
+      <div
+        id="gallery"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-5"
+      ></div>
+    </main>
 
- </head>
+    <footer class="overline mt-[10px] text-center lowercase tracking-[-1px]">&copy Katarina Andrews</footer>
 
- <body>
-
- <header class="p-5 text-center">
-
-<h1 class="text-4xl font-extrabold md:text-5xl lg:text-6xl p-5 rounded-lg shadow-2xl">Random Image Gallery</h1>
-
- </header> 
-
- <main>
-
- <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-5"></div>
-
- </main>
-
- <footer></footer>
-
-
-
-<script src="script.js"></script>
- </body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
